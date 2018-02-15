@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Tasker Add</title>
+    <link rel="stylesheet" href="../res/styles.css"/>
+    <link rel="icon" href="https://students.cs.byu.edu/~rachelat/icon.ico"/>
+  </head>
+  <body>
+    <div class="grid">
+      <nav class="sidebar">
+        <div class="toolHome">
+            <a href="../index.html"><img src="../res/home.png" class="icon"/></a>
+            <span class="home">Home</span>
+        </div>
+        <div class="toolCalendar">
+            <a class="aonPage" href="calendar.html"><img src="../res/calendar.png" class="onPage"/></a>
+            <span class="calendar">Calendar</span>
+        </div>
+        <div class="toolExam">
+            <a href="exam.html"><img src="../res/exams.png" class="icon"/></a>
+            <span class="exam">Exams</span>
+        </div>
+        <div class="toolProject">
+            <a href="projects.html"><img src="../res/projects.png" class="icon"/></a>
+            <span class="project">Projects</span>
+        </div>
+        <div class="toolTask">
+            <a href="tasks.html"><img src="../res/tasks.png" class="icon"/></a>
+            <span class="task">Tasks</span>
+        </div>
+      </nav>
+    <div class="box">
+        <h2>Add Item</h2>
+        <div class="border">
+            <form method="POST" action="https://formspree.io/rachel.bengochea@gmail.com">
+              <input type="message" name="projects" placeholder="Item Type">
+              <textarea name="message" placeholder="Item Details"></textarea>
+              <button type="submit">Add Item</button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <a href="https://github.com/raebengo/tasker">Source Code</a>
+  </footer>
+</html>

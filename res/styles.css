@@ -1,0 +1,463 @@
+.grid{
+   display:grid;
+   grid-template-columns:5em 31% 31% 31%;
+   grid-template-rows: 5em 20em auto;
+}
+
+.sidebar{
+   grid-row: 1/4;
+   width:100%;
+   height:200px;
+   background-color: #242582;
+}
+
+@media screen and (min-width: 50em){
+   .sidebar{
+      grid-row: 1/4;
+      height:50em;
+      background-color: #242582;
+   }
+}
+
+.title{
+   grid-column: 3;
+   text-align: center;
+}
+
+.calendar {
+   grid-row: 2;
+   grid-column: 2;
+   padding: 0.5em;
+   text-align:center;
+}
+
+.tasks{
+   grid-row: 2;
+   grid-column:3;
+   padding:0.5em;
+   text-align:center;
+}
+
+.examProj{
+   grid-row:2;
+   grid-column:4;
+   padding:0.5em;
+   text-align:center;
+}
+
+.newTask{
+   grid-row:2;
+   grid-column:4;
+   padding:0.5em;
+   text-align:center;
+}
+
+.calLink{
+   grid-row: 3;
+   grid-column: 2;
+   padding: 0.5em;
+   text-align:center;
+   position:relative;
+   display: inline-block;
+}
+
+.lsLink{
+   grid-row: 3;
+   grid-column: 3;
+   padding: 0.5em;
+   text-align:center;
+   position:relative;
+   display: inline-block;
+}
+
+.examLink{
+   grid-row: 3;
+   grid-column: 4;
+   padding: 0.5em;
+   text-align:center;
+   position:relative;
+   display: inline-block;
+}
+
+.calLink .googleCal {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+}
+
+.calLink:hover .googleCal {
+   visibility: visible;
+}
+
+.lsLink .learn {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+}
+
+.lsLink:hover .learn {
+   visibility: visible;
+}
+
+.examLink .exam{
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+}
+
+.examLink:hover .exam {
+   visibility: visible;
+}
+
+.icon{
+   height: auto;
+   max-width:50%;
+   padding:1.25em;
+}
+
+.onPage{
+   background-color: #F64C72;
+   height: auto;
+   max-width:50%;
+   padding:1.25em;
+}
+
+.aonPage{
+   background-color: #F64C72;
+}
+
+nav a:hover, .icon:hover, .onPage:hover {
+   background-color: #99738E;
+}
+
+.toolCalendar{
+   position:relative;
+   display: inline-block;
+}
+
+.toolCalendar .calendar {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 110%;
+}
+
+.toolCalendar:hover .calendar {
+   visibility: visible;
+}
+
+.toolHome{
+   margin-top: 5em;
+   position:relative;
+   display: inline-block;
+}
+
+.toolHome .home {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 110%;
+}
+
+.toolHome:hover .home {
+   visibility: visible;
+}
+
+.toolExam{
+   position:relative;
+   display: inline-block;
+}
+
+.toolExam .exam {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 110%;
+}
+
+.toolExam:hover .exam {
+   visibility: visible;
+}
+
+.toolProject{
+   position:relative;
+   display: inline-block;
+}
+
+.toolProject .project {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 110%;
+}
+
+.toolProject:hover .project {
+   visibility: visible;
+}
+
+.toolTask{
+   position:relative;
+   display: inline-block;
+}
+
+.toolTask .task {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    text-align: center;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 110%;
+}
+
+.toolTask:hover .task {
+   visibility: visible;
+}
+
+.add{
+   margin:2em;
+   background-color:#F64C72;
+   padding:1.25em;
+}
+
+.add:hover{
+   background-color: #99738E;
+}
+
+.calendarWeek{
+   margin:0em 1em;
+   background-color: #242582;
+   grid-column:2/5;
+   grid-row:2;
+   display:grid;
+   grid-template-columns:auto auto auto auto auto auto;
+   grid-template-rows: 20em;
+}
+
+.monday{
+   grid-column: 1;
+   text-align:center;
+   background-color: white;
+   margin:1em;
+}
+
+.tuesday{
+   grid-column: 2;
+   text-align:center;
+   background-color:white;
+   margin:1em;
+}
+
+.wednesday{
+   grid-column:3;
+   text-align:center;
+   background-color: white;
+   margin:1em;
+}
+
+.thursday{
+   grid-column:4;
+   text-align:center;
+   background-color: white;
+   margin:1em;
+}
+
+.friday{
+   grid-column:5;
+   text-align:center;
+   background-color: white;
+   margin:1em;
+}
+
+.weekend{
+   grid-column:6;
+   text-align:center;
+   background-color: white;
+   margin:1em;
+}
+
+html{
+   display:inline-block;
+}
+
+body{
+   background-color: white;/*#2F2FA2;*/
+   margin:0;
+}
+
+footer{
+   margin: 0;
+   float:right;
+   text-align: right;
+   width:100%;
+   height:100%;
+   padding:.5em;
+   background-color: #242582;
+}
+
+footer a {
+   color:white;
+   margin:1.9em;
+   padding:.2em;
+   font-size:0.8em;
+   text-decoration: none;
+   font-family: "Verdana", "Georgia", sans-serif;
+}
+
+ nav a{
+   font-size: 1em;
+   padding:0em;
+   margin:0em;
+   border-bottom: 0.06em solid white;
+}
+
+h1{
+   color:#242582;
+   font-size:2em;
+   font-family: "Lucida Console", Monaco, monospace;
+}
+
+h2{
+   color:#242582;
+   font-size:1.5em;
+   font-family: "Lucida Console", Monaco, monospace;
+}
+
+hr{
+   width:75%;
+}
+
+ol{
+   padding:0;
+   color:#242582;
+   list-style-type: none;
+   font-family: "Verdana", "Georgia", sans-serif;
+   font-size:1em;
+}
+
+ol li{
+   padding:.7em;
+}
+
+p{
+   color:#242582;
+   padding:.2em;
+   font-size:0.8em;
+   text-decoration: none;
+   font-family: "Verdana", "Georgia", sans-serif;
+}
+
+form {
+  margin: 0 auto;
+  width: 20.5em;
+  text-align: center;
+  padding: 2em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color:#242582;
+  font-family: "Verdana", "Georgia", sans-serif;
+}
+
+input{
+  height: 35px;
+}
+
+input, textarea {
+  width: 25.5em;
+  box-sizing: border-box;
+  border: 2px solid #99738E;
+  margin:10px 0px 10px 0px;
+  background-color: white;
+}
+
+textarea {
+  vertical-align: top;
+  height: 250px;
+}
+
+button {
+  padding: 1em 2em;
+  font-family: "Verdana", "Georgia", sans-serif;
+  font-size:15px;
+  background-color: #242582;
+  border-radius: 15px;
+  color:white;
+
+}
+
+.box{
+   grid-column: 2/5;
+   text-align:center;
+}
+
+.border{
+   width:30em;
+   margin: 2em auto;
+   border: 4px solid #242582;
+   text-align:center;
+}
