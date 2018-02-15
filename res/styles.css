@@ -227,6 +227,30 @@ nav a:hover, .icon:hover, .onPage:hover {
    visibility: visible;
 }
 
+.toolBooks{
+   position:relative;
+   display: inline-block;
+}
+
+.toolBooks .book {
+    visibility: hidden;
+    background-color: #242582;
+    color: white;
+    font-size:0.8em;
+    font-family: "Verdana", "Georgia", sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4em;
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 110%;
+}
+
+.toolBooks:hover .project {
+   visibility: visible;
+}
+
 .toolProject{
    position:relative;
    display: inline-block;

@@ -21,7 +21,7 @@
             <span class="exam">Exams</span>
         </div>
         <div class="toolProject">
-            <a class="aonPage" href="projects.html"><img src="../res/projects.png" class="onPage"/></a>
+            <a href="projects.html"><img src="../res/projects.png" class="icon"/></a>
             <span class="project">Projects</span>
         </div>
         <div class="toolTask">
@@ -29,34 +29,29 @@
             <span class="task">Tasks</span>
         </div>
         <div class="toolBooks">
-          <a href="pages/books.html"><img src="../res/books.png" class="icon"/></a>
+          <a class="aonPage" href="pages/books.html"><img src="../res/books.png" class="onPage"/></a>
           <span class="book">Books</span>
         </div>
       </nav>
       <div class="title">
-        <h1>Projects</h1>
+        <h1>Books</h1>
       </div>
-      <div class="calendar">
-        <h2>Upcoming</h2>
-        <hr/>
-        <ol>
-          <li>Feb 1: CS 260<br/>
-              Creative Assign</li>
-          <li>Feb 14: CS 172<br/>
-            Some Awful Lab</li>
-          <li>Feb 27: CS 345<br/>
-            Final Project</li>
-        </ol>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script text="type/javascript" src="/script.js"></script>
+        <form>
+          <label>Find a Book</label><br/>
+          <input id="bookInput" type="text"></input><br/>
+          <select id="bookType" name="type">
+            <option value="title">Book Name</option>
+            <option value="author">Author</option>
+            <option value="all">ISBN</option>
+            <option value="all">Both</option>
+          </select><br>
+          <input id="bookSubmit" type="submit" value="Submit"></input>
+        </form>
+
+        <div id="bookResults"> </div>
       </div>
-      <div class="tasks">
-        <img height="250em" src="../res/sun.jpeg"/>
-      </div>
-      <div class="newTask">
-         <h2>Add New Project</h2>
-         <hr/>
-         <a href="newtask.html"><img class="add" height="45px" src="../res/add.png"/></a>
-      </div>
-    </div>
   </body>
   <footer>
     <a href="https://github.com/raebengo/tasks-books">Source Code</a>
