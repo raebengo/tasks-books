@@ -38,20 +38,23 @@
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script text="type/javascript" src="/script.js"></script>
+      <div class="bookForm">
         <form>
           <label>Find a Book</label><br/>
           <input id="bookInput" type="text"></input><br/>
           <select id="bookType" name="type">
-            <option value="title">Book Name</option>
-            <option value="author">Author</option>
-            <option value="all">ISBN</option>
-            <option value="all">Both</option>
+            <option value="intitle:">Book Name</option>
+            <option value="inauthor:">Author</option>
+            <option value="isbn:">ISBN</option>
+            <option value="subject:">Subject</option>
+            <option value="inpublisher:">Publisher</option>
           </select><br>
           <input id="bookSubmit" type="submit" value="Submit"></input>
+          <p>Provided by Google Books API</p>
         </form>
-
-        <div id="bookResults"> </div>
       </div>
+      <div id="bookResults"> </div>
+    </div>
   </body>
   <footer>
     <a href="https://github.com/raebengo/tasks-books">Source Code</a>
