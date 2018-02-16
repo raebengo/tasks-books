@@ -23,7 +23,7 @@ $(document).ready(function() {
                 results += "<img src=" +json.items[i].volumeInfo.imageLinks.thumbnail + "/>";
                 results += "<h2>" + json.items[i].volumeInfo.title + "</h2>";
                 if(json.items[i].volumeInfo.authors != undefined){
-                  results += "<h3>" + json.items[i].volumeInfo.authors[0];
+                  results += "<h3>Author: " + json.items[i].volumeInfo.authors[0];
                   for(var j = 1; j < json.items[i].volumeInfo.authors.length; j++){
                     results += " & " + json.items[i].volumeInfo.authors[j];
                   }

@@ -177,7 +177,7 @@ nav a:hover, .icon:hover, .onPage:hover{
 }
 
 .eachBook:hover{
-   border: 1.5px solid #99738E;
+   border: 1.5px solid #99738e3d;
 }
 
 .toolCalendar{
@@ -555,4 +555,8 @@ button {
     font-family: "Verdana", "Georgia", sans-serif;
     color: #fff;
     font-size: 0.9em;
+}
+
+h5{
+   margin:0em;
 }
